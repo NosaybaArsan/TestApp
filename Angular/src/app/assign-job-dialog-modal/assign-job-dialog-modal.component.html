@@ -1,0 +1,14 @@
+<h2>Assign Job</h2>
+<div>
+
+<select >
+   <option  *ngFor="let country of employees"> {{country.FullName}}</option>
+ </select>
+ 
+ <input matInput  placeholder="Job description">
+</div>
+<div>
+    <button mat-raised-button (click)="saveDialog()">Save</button>
+
+    <button mat-raised-button (click)="closeDialog()">Close</button>
+</div>
